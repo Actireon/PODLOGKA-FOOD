@@ -1,0 +1,42 @@
+.footer
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: center
+	background-color: $color-3
+	padding: 65px 0
+	&__row
+		display: flex
+	&__col
+		width: 33.33%
+		&_map
+			width: 66.66%
+			display: flex
+			justify-content: center
+	&__text
+		margin-bottom: 15px
+	&__map
+		height: 100%
+		width: 100%
+@media #{$tablet}
+	.footer
+		padding-top: 0
+		.container
+			padding: 0
+		&__row
+			flex-wrap: wrap
+		&__col
+			width: 50%
+			padding:  0 10px
+		&__map
+			width: 100%
+			min-height: 250px
+
+@media #{$phone}
+	.footer
+		&__col
+			text-align: center
+			width: 100%
+			&_contacts
+				order: 1
+				margin-top: 20px

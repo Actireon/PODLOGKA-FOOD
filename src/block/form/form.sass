@@ -1,0 +1,128 @@
+.form
+	&__option,
+	&__select,
+	&__textarea,
+	&__field
+		padding: 10px
+		border: 0px
+		margin-bottom: 20px
+		font-size: 14px
+	&__textarea
+		height: 80px
+
+.form
+	&_feedback-form
+		.form
+			&__textarea,
+			&__field
+				width: 100%
+
+.form
+	&_cart
+		width: 100%
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-top: 105px
+		padding: 10px
+		box-sizing: border-box
+		background: #fff
+		padding-bottom: 100px 
+		.form
+			&__box-product
+				width: 100%
+			&__textarea,
+			&__field
+				border: 1px solid $color-1
+				margin: 10px auto
+				max-width: 290px
+				width: 100%
+			&__field:valid 
+				background-color: #dff0d8
+			&__shape
+				.form__icon
+					display: none
+
+
+@media #{$tablet}
+	.form
+		&_cart
+			.form
+				&__shape
+					.form__text
+						display: none
+					.form__icon
+						display: inline-block
+.form
+	&_buy
+		display: none
+		&.active
+			display: block
+	&_buy,
+	&_cart
+		.form
+			&__table
+				display: flex
+				justify-content: center
+				align-items: center
+				flex-wrap: wrap
+				border-top: 1px solid $color-1
+				border-left: 1px solid $color-1
+			&__col-title 
+				padding: 2px
+			&__title
+				text-align: center
+				font-weight: bold
+				text-transform: uppercase
+				width: 100%
+			&__list
+				width: 100%
+			&__row
+				display: flex
+				width: 100%
+				border-bottom: 1px solid $color-1
+				&_head
+					text-align: center
+			&__size
+				word-wrap: break-word
+			&__size,
+			&__color,
+			&__price,
+			&__shape,
+			&__square,
+			&__count,
+			&__sum
+				display: flex
+				align-items: center
+				justify-content: center
+				border-right: 1px solid $color-1
+				width: 13%
+			&__total-sum
+				width: 13%
+				font-weight: bold
+				border-right: 1px solid $color-1
+				text-align: center
+			&__total-sum-text
+				width: 87%
+				border-right: 1px solid $color-1
+			&__color
+				width: 22%
+			&__select,
+			&__field_count
+				width: 100%
+				margin-bottom: 0
+				padding: 5px
+				background-color: rgba($color-3, 1)
+			&__field
+				text-align: center
+
+@media #{$phone}
+	.form
+		&_cart,
+		&_buy
+			font-size: 12px
+			.form
+				&__row_head
+					.form__col-title 
+						writing-mode: tb-rl
+						transform: rotate(180deg)
