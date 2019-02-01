@@ -1,3 +1,3 @@
-Что использовалось: JS, AJAX, SASS, PHP, PUG, MySQL, BEM, Gulp
+What was used: JS, AJAX, SASS, PHP, PUG, MySQL, BEM, Gulp
 
-Функционал: адаптивная верстка, корзина которая формируеться на основе таблицы "Оформить заказ", отправка уведомления на почту
+Functionality: adaptive layout, a basket, that is formed on the basis of the table "Оформить заказ", sending a notification by mail.
